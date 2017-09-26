@@ -87,18 +87,18 @@ ul {
 /**************************/
 
 body {
-  font-size: 67%;
-  font-family: 'Amatic SC', sans-serif;
+  font-size: 2em;
+  font-family: 'Trebuchet MS', Tahoma;
   text-align: center;
-  color: #fffff0;
-  background-color: #88d8b0;
+  color: #2f2f2f;
+  background-color: #fafafa;
 }
 
 header {
   position: relative;
   height: 100%;
   width:100%;
-  font-size: 2.8em;
+  font-size: 100%;
 }
 header>a {height:100%; width:100%;}
 #logo {
@@ -108,7 +108,7 @@ header>a {height:100%; width:100%;}
 }
 
 #navDown {
-  font-size: .77em;
+  font-size: 1.2em;
   padding-bottom: .3em;
 }
 
