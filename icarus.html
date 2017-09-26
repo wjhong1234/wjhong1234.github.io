@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Icarus</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" >
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/icarus.css">
+
+  
+</head>
+
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Sacramento|Amatic+SC:700' rel='stylesheet' type='text/css'>
+
+<header class="wrapper">
+  <a class="clickable content" href="#main">
+    <h1 class="hidden">Random Quotes</h1>
+    <div class="wrapper"> <!-- Divs for proper positioning only; can I simplify all of this? -->
+      <div class="content">
+        <img id="logo" src="https://cdn.rawgit.com/eevu/codepen-assets/master/quotesLogo.png" alt="random quotes">
+      </div>
+    </div>
+    <div id="navDown" class="absPosBottom">
+      <span lang="en" class="bilingualItem">discover</span>
+      <span lang="it" class="hidden bilingualItem">scopri</span>
+      <i class="fa fa-angle-down"></i>
+    </div>
+  </a>
+</header>
+
+<div id="langSelector" class="dropDownSelector">
+  <span id="currentLang">EN</span>
+  <span id="dropDownBtn" class="fa fa-angle-down"></span>
+  <ul id="dropDownList" class="hidden">
+    <li class="selected">EN</li>
+    <li>IT</li>
+  </ul>
+</div>
+
+<main id="main" class="wrapper">
+  <div id="quote" class="content">
+    <div id="textCont">
+      <!--QuoteText Here-->
+    </div>
+    <div id="authorCont">
+      <!--QuoteAuthor Here-->
+    </div>
+  </div>
+
+  <div id="btnWrap" class="content absPosBottom">
+    <div class="wrapper">
+      <button id="newQuoteBtn" class="clickable btn content">
+        <i class="btnIcon fa fa-quote-right"></i>
+        <span lang="en" class="bilingualItem">new quote</span>
+        <span lang="it" class="hidden bilingualItem">nuovo aforisma</span>
+      </button>
+      <a id="tweetBtn" class="clickable btn content" href="" target="_blank">
+        <i class="btnIcon fa fa-twitter"></i>
+        <span span lang="en" class="bilingualItem">tweet it!</span>
+        <span lang="it" class="hidden bilingualItem">twitta!</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  developed by Ivana Cossu for free code camp
+  <ul class="contact">
+    <li>
+      <a class="fa fa-codepen contact clickable" href="https://codepen.io/eevu/" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-github contact clickable" href="https://github.com/eevu/" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-fire contact clickable" href="https://www.freecodecamp.com/eevu" target="_blank"></a>
+    </li>
+  </ul>
+</footer>
+  
+    <script  src="js/icarus.js"></script>
+
+</body>
+</html>
