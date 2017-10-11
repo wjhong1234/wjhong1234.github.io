@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html >
 <head>
-  <meta charset="UTF-8">
-  <title>William Hong</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
-<link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+  <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
-      <link rel="stylesheet" href="css/index.css">
-  
 </head>
 
-<body>
-  <header class="header container-fluid">
+<header class="header container-fluid">
   <div class="nav-toggle-wrapper">
     <button class="nav-toggle-btn">
 					      <span class="line"></span>
@@ -25,23 +18,15 @@
   </div>
   <nav class="header__nav">
     <ul class="nav">
-      <li class="header__nav__item"><a href="#about" data-ref="about">about</a></li>
-      <li class="header__nav__item"><a href="#portfolio" data-ref="portfolio">work</a></li>
+      <li class="header__nav__item"><a href="#about" data-ref="about">intro</a></li>
+      <li class="header__nav__item"><a href="#portfolio" data-ref="portfolio">projects</a></li>
       <li class="header__nav__item"><a href="#contact" data-ref="contact">contact</a></li>
     </ul>
   </nav>
   <ul class="header__social-btns">
-    <li>
-      <a class="fa fa-facebook" href="#"></a>
-    </li>
-    <li>
-      <a class="fa fa-github" href="https://github.com/wjhong1234" target="_blank"></a>
-    </li>
-    <li>
-      <a class="fa fa-codepen" href="https://codepen.io/eevu" target="_blank"></a>
-    </li>
-    <li>
-      <a class="fa fa-fire" href="https://www.freecodecamp.com/eevu" target="_blank"></a>
+    <li><a class="fa fa-instagram" href="https://www.instagram.com/wilyum.jh/" target="_blank"></a></li>
+    <li><a class="fa fa-github" href="https://www.github.com/wjhong1234" target="_blank"></a></li>
+    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/william-hong-a7445313b/" target="_blank"></a>
     </li>
   </ul>
 </header>
@@ -51,7 +36,9 @@
   <section id="about" class="main-section">
     <div class="wrapper">
       <p class="about__intro">
-        Hi, I'm William, an aspiring Android Developer with an interest in UX/UI design. <br> I'm a Fourth Year Computer Science student at the University of Calgary, with Java and Python as my primary languages. <br> I'm into PC gaming and chilling with my dudes. <br>
+         Hi, I'm William, an aspiring Android Developer with an interest in UX/UI design. <br> 
+         I'm a Fourth Year Computer Science student at the University of Calgary, with Java and Python as my primary languages. <br> 
+         I'm into PC gaming and chilling with my dudes. <br>
       </p>
       <a href="#portfolio" class="global-button rotated scroll"> see my work </a>
     </div>
@@ -62,21 +49,21 @@
       <h4 class="filters__title"> <i class="fa fa-tags"></i> </h4>
       <ul class="filters__list">
         <li class="filters__label is-active"> all </li>
-        <li class="filters__label" data-cat="aa"> Android Applications </li>
-        <li class="filters__label" data-cat="rest">Others</li>
+        <li class="filters__label" data-cat="android"> Android Applications </li>
+        <li class="filters__label" data-cat="personal"> Personal Projects </li>
+        <li class="filters__label" data-cat="hardware"> Hardware Programming </li>
+        <li class="filters__label" data-cat="other"> other </li>
       </ul>
     </div>
 
     <div class="portfolio__project-wrapper row">
 
-      <div class="portfolio__project-wrapper row">
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="aa">
-        <a href="icarus.html" title="view live">
+      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="android" style="background-image: url(images/icarus/tease/tile.png);">
+        <a href="icarus.html">
           <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/quotes.svg" alt="random quotes">
+            <img src="images/icarus/tease/cookie.svg" alt="Icarus">
           </div>
-          <div class="portfolio__project__description">
+          <div class="portfolio__project__description" style="background: none; background-image: url(images/icarus/tease/clouds.png);">
             <div class="info-wrapper">
               <h3 class="portfolio__project__name">Icarus</h3>
               <p class="portfolio__project__category">A mobile game for Android about a cookie named Icarus.</p>
@@ -84,78 +71,7 @@
           </div>
         </a>
       </div>
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="rest">
-        <a href="https://codepen.io/eevu/full/NNQXZg" target="_blank" title="view live">
-          <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/weather.svg" alt="weather app">
-          </div>
-          <div class="portfolio__project__description">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Arm Assembly Racer Game</h3>
-              <p class="portfolio__project__category">Our take on the classic Racer game.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="aa">
-        <a href="https://codepen.io/eevu/full/mEyLPx" target="_blank" title="view live">
-          <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/wiki.svg" alt="wikipedia viewer">
-          </div>
-          <div class="portfolio__project__description">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Library Application</h3>
-              <p class="portfolio__project__category">A library application with a simply clean interface.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="rest">
-        <a href="#" title="coming soon">
-          <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/desktop.svg" alt="random placeholder">
-          </div>
-          <div class="portfolio__project__description">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Hi-Fi Gardening Guide Prototype </h3>
-              <p class="portfolio__project__category">High Fidelity Prototype of a tool for gardeners.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="aa">
-        <a href="#" title="coming soon">
-          <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/txt.svg" alt="text editor">
-          </div>
-          <div class="portfolio__project__description">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Change Calculator</h3>
-              <p class="portfolio__project__category">An exploration of the software engineering process.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="rest">
-        <a href="https://en.wikipedia.org/wiki/Bacteriophage" target="_blank" title="what's a becteriophage?">
-          <div class="portfolio__project__preview">
-            <img src="https://eevu.github.io/img/bacteriophage.svg" alt="random placeholder">
-          </div>
-          <div class="portfolio__project__description">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Raspberry Pi Snake Game</h3>
-              <p class="portfolio__project__category">My take on the classic Snake game, created on the Raspberry Pi with Sense HAT.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
+      
     </div>
 
   </section>
@@ -184,22 +100,7 @@
         </div>
       </form>
     </div>
-    <div id="map" class="col-xs-12 col-md-7 "></div>
-  </section>
-
-  <section id="credit" class="row">
-    <p>
-      Built for <a href="https://www.freecodecamp.com" target="_blank" class="credit-link">Free Code Camp</a> by <a href="https://codepen.io/eevu" target="_blank" class="credit-link">Ivana Cossu</a> &copy;2016
-    </p>
-    <p>
-      Map styled with <a href="https://snazzymaps.com" target="_blank" class="credit-link">Snazzy Maps</a>
-    </p>
   </section>
 </footer>
 
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-  
-    <script  src="js/index.js"></script>
-
-</body>
-</html>
+<script type="text/javascript" src="js/index.js"></script>
