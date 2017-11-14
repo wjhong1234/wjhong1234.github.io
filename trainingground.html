@@ -21,19 +21,20 @@
 				<li class="active"><a href="#define">Define</a></li>
 				<li><a href="#ideation">Ideation</a></li>
 				<li><a href="#variations">Variations</a></li>
-				<li><a href="#development">Development</a></li>
+				<li><a href="#designchoices">Design Choices</a></li>
+				<li><a href="#futureiterations">Future Iterations</a></li>
 				<li><a href="#finalproduct">Final Product</a></li>
 				<li><a href="#videodemo">Video Demo</a></li>
 			</ul>
 		</div>
 	</nav>
 
-<div class="container" style="width: 65%">
+<div class="container" style="width: 72%">
 	<h1 id="define">Define</h1> 
 
 	<p>Interactive Horror Training is a Mobile Virtual Reality Application that can help a user get accustomed to common horror movie tropes, such as jump scares and extremely suspenseful situations. The app has the user in the center of an uncomfortable environment, with eerie music and sounds playing around them. Occasionally, suspenseful situations or a jump scare happens, but instead of a monster or ghost, a kitten or other cute creature will appear instead! </p> <br>
 
-	<img src="images/profile.jpeg" style="margin-bottom: 25px">
+	<img src="images/horror/assets/campsite.png" style="margin-bottom: 25px; width: 75%; height: auto;">
 
 	<h1 id="ideation">Ideation</h1>
 
@@ -305,13 +306,19 @@
         </div>
     </div>
 
-    <h1 id="development">Development</h1>
+    <h1 id="designchoices">Design Choices</h1>
 
-    <p>Development was done in the Unity Game Engine. I initially thought about using another device as a controller for a flashlight object, that would allow the user to control which parts of the video are visible, but because of time constraints, implementation of that was not possible. Instead, I had a light where the user was looking, while everywhere else was dark.</p> <br>
+    <p>It was clear to me that this experience would be much better with headphones on, as the surrounding sounds would be much more immersive compared to a mono speaker on most phones, and better without external noises. Knowing that a user would likely wear speakers for this experience, I decided that focusing a lot of my attention of the audio would be worth it. I added eerie background music that was not too intrusive of the user's experience, as well as ambient sounds, such as some sounds of nature, radio static, etc.</p> <br>
 
-    <p>This experience is much better with headphones on, as the surrounding sounds would be much more immersive compared to a mono speaker on most phones, and better without external noises.</p> <br>
+    <p>Instead of real kittens from another video source, I found that using 3D models from the Unity store were much easier to add to the video. This prompted me to find a new video that was less realistic in order to keep consistency. Luckily, when I tested this with a couple of friends, I found that the atmosphere that I was aiming for did not change much, if at all.</p> <br>
 
-    <p>For events that were not jumps scares, I hoped that they would add to the eerie atmosphere, making it feel more like the user was stuck in the middle of a forgotten nowhere, rather than some place safe. The goal was to build suspense before a bigger event occurred.</p> <br>
+    <h1 id="futureiterations">Future Iterations</h1>
+
+    <p>I initially thought about using another device as a controller for a flashlight object, that would allow the user to control which parts of the video are visible, but because of time constraints, implementation of that was not possible. Instead, I had a light where the user was looking, while everywhere else was dark.</p> <br>
+
+    <p>One of the interactions I wanted to implement was when the user's heartrate would effect when or how often jump scares happened. Another idea I had was how quickly the user turned their heads when a random sound played. While the details of how either would work would need to be flushed out more, I do think that one more user interaction would add another layer to this experience.</p>
+
+    <p>The goal of the environment, both with visuals and audio, was to build up suspense for the user before the jump scare happened. I intended on adding puppies and other cute creatures as well as kittens, but because of time constraints, I only implemented kittens. If I had another week or two, I would have added those, as well as several more sites for the user to have this experience in, such as a haunted house or the mountains.</p> <br>
 
     <h1 id="finalproduct">Final Product</h1>
 
@@ -328,7 +335,15 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active" align="center">
-				<img src="images/profile.jpeg">
+				<img src="images/horror/assets/campsite.png">
+				<div class="carousel-caption" style="position: relative;">
+					<h3>The Campsite</h3>
+        			<p>An eerie campsite in the middle of nowhere. The environment features creepy music, uneasy radio static, and a mysterious darkness. The only source of light is the fire.</p>
+      			</div>
+			</div>
+
+			<div class="item" align="center">
+				<img src="images/horror/assets/campsite.png">
 				<div class="carousel-caption" style="position: relative;">
 					<h3>Idea #1</h3>
         			<p>Something to do with VR</p>
@@ -336,15 +351,7 @@
 			</div>
 
 			<div class="item" align="center">
-				<img src="images/profile.jpeg">
-				<div class="carousel-caption" style="position: relative;">
-					<h3>Idea #1</h3>
-        			<p>Something to do with VR</p>
-      			</div>
-			</div>
-
-			<div class="item" align="center">
-				<img src="images/profile.jpeg">
+				<img src="images/horror/assets/campsite.png">
 				<div class="carousel-caption" style="position: relative;">
 					<h3>Idea #1</h3>
         			<p>Something to do with VR</p>
@@ -353,11 +360,11 @@
 		</div>
 
 		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#FinalCarousel" data-slide="prev">
+		<a class="left carousel-control" style="color: #fafafa" href="#FinalCarousel" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control" href="#FinalCarousel" data-slide="next">
+		<a class="right carousel-control" style="color: #fafafa" href="#FinalCarousel" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right"></span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -375,7 +382,7 @@
 
     <h1>Credits</h1>
 
-    <p>The kitten and puppy videos are credited to ___ and ___, respectively. The background video is credited to ___, while the sound effects are by ___ and background music is credited to ___. This application was created in Unity, a game engine created by Unity Technologies.</p> <br><br>
+    <p>The kitten assets, called <a href="https://www.assetstore.unity3d.com/en/#!/content/66083">'Lowpoly Toon Cat Lite 2.0'</a>, was downloaded free from the Unity Asset Store, created by Polydactyl. The background video is called <a href="https://www.youtube.com/watch?v=ZwhT9NqtteA">'Camping Alone'</a>, credited to chillgate on Youtube. The static radio is from the video <a href="https://www.youtube.com/watch?v=wffIdh0CZWs">'Radio Static Sound Effect'</a> by ParadoxMirror on Youtube, while the ambient fire sounds are from a video called <a href="https://www.youtube.com/watch?v=lQPdYRh3CME">'Crackling Fireplace Sound Effect HQ'</a> by Virtual Fireplace, also on Youtube. The background music is titled <a href="https://www.youtube.com/watch?v=QR28G204z5k">'The Sealed Kingdom'</a> by Adrian von Ziegler. This application was created in <a href="https://unity3d.com/">Unity</a>, a game engine created by Unity Technologies.</p> <br><br>
 
 </div>
 
