@@ -10,6 +10,14 @@ body {
 	width: 100%;
 	margin: auto;
 	text-align: center;
+
+	padding-top: 65px; 
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
 }
 
 p {
