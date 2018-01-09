@@ -332,6 +332,12 @@ function gameEnd() {
 	c.fillStyle = "#FAFAFA";
 	c.textAlign = 'center';
 	c.fillText((state == 3 ? 'play again' : 'try again'), innerWidth / 2, (innerHeight / 2) + floor + (floor / 2.5));
+
+	c.beginPath();
+	c.font = '48px Pacifico';
+	c.fillStyle = colours[level -1];
+	c.textAlign = 'center';
+	c.fillText("Score: " + score, innerWidth / 2, (innerHeight) - floor);
 }
 
 // before game start screen
