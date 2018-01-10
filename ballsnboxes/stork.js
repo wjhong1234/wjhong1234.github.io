@@ -337,7 +337,7 @@ function gameEnd() {
 	c.font = '48px Pacifico';
 	c.fillStyle = colours[level -1];
 	c.textAlign = 'center';
-	c.fillText("Score: " + score, innerWidth / 2, innerHeight - floor;
+	c.fillText("Score: " + score, innerWidth / 2, innerHeight - floor);
 }
 
 // before game start screen
@@ -361,10 +361,8 @@ function pre() {
 function animate() {
 	if (state == 2) {
 		requestAnimationFrame(animate);
-		console.log(state);
 	} else {
 		requestAnimationFrame(gameEnd);
-		console.log(state);
 	}
 
 	tick();
@@ -374,7 +372,6 @@ function animate() {
 // title screen
 function main() {
 	requestAnimationFrame(main);
-	console.log(state);
 
 	// background
 	c.beginPath();
