@@ -337,7 +337,7 @@ function gameEnd() {
 	c.font = '48px Pacifico';
 	c.fillStyle = colours[level -1];
 	c.textAlign = 'center';
-	c.fillText("Score: " + score, innerWidth / 2, (innerHeight) - floor);
+	c.fillText("Score: " + score, innerWidth / 2, innerHeight - floor;
 }
 
 // before game start screen
