@@ -54,12 +54,14 @@ addEventListener('keypress', function(e) {
 		if (state == 1) {
 			state = 2;
 			start();
-		} else if (state == 3 || state == 4 || state == 5) {
+		} else {
+			fly = true;
+		}
+	} else if (e.keyCode == 13) {
+		if (state == 0 || state == 3 || state == 4 || state == 5) {
 			state = 1;
 			init();
 			pre();
-		} else {
-			fly = true;
 		}
 	}
 });
