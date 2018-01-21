@@ -1,0 +1,219 @@
+/*I just want those three buttons to work man.*/
+
+/*all things*/
+* {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+html, body {
+	width: 100%;
+	margin: auto;
+	background-color: #FAFAFA;
+	color: #111;
+}
+
+li {
+	list-style: none;
+}
+
+figure {
+	font-weight: 300;
+	margin: 32px 0px;
+}
+
+figcaption {
+	margin: 8px;
+}
+
+figcaption a {
+	font-weight: 300;
+}
+
+img {
+	width: 960px;
+	height: auto;
+	border-radius: 8px;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+header {
+	overflow: hidden;
+	background-color: #111;
+	position: fixed;
+	width: 100%;
+	padding: 8px 0px;
+	top: 0px;
+}
+
+footer {
+	overflow: hidden;
+	background-color: #111;
+	width: 100%;
+}
+
+/*CLASSES*/
+.container {
+	max-width: 960px;
+	margin: 108px auto 52px;
+}
+
+.container p {
+	font-size: 1.1em;
+}
+
+.container h1 {
+	font-size: 2.2em;
+}
+
+/*SHOWCASE*/
+/*.showcase {
+	width: auto;
+	height: 128px;
+}
+
+.showcase .button {
+	width: 128px;
+	padding: 52px;
+	background-color: #2F2F2F;
+	color: #FAFAFA;
+	display: inline-block;
+}*/
+
+/*CAPTIONS*/
+.imgsource {
+	font-size: 0.8em;
+}
+
+/*TABLE*/
+.siegetable {
+	border-collapse: collapse;
+}
+
+.siegetable td, .siegetable th {
+	border: 1px solid #AAA;
+	padding: 12px;
+}
+
+.siegetable tr:nth-child(even) {
+	background-color: #F2F2F2;
+}
+
+.siegetable tr:hover {
+	background-color: #E0E0E0;
+}
+
+.siegetable th {
+	background-color: #111;
+	color: white;
+	padding: 12px 48px;
+}
+
+.siegetable img {
+	/*limit the size, make it a square*/
+}
+
+/*LINKS*/
+.container a {
+	color: #2694e2;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.container a:hover {
+	color: #107ecc;
+	font-weight: bold;
+}
+
+.container a:visited {
+	color: #9668c4;
+}
+
+footer a {
+	text-decoration: none;
+	color: #FAFAFA;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/*NAV BAR*/
+.title, .nav a {
+	color: #FAFAFA;
+	text-decoration: none;
+	margin: auto 16px;
+	padding: 16px 8px;
+}
+
+.title {
+	display: inline-block;
+	font-size: 1.8em;
+	padding-top: 12px;
+	margin-left: 32px;
+}
+
+.nav {
+	margin-right: 32px;
+	float: right;
+	font-size: 1.2em;
+}
+
+.nav li {
+	float: left;
+}
+
+.nav a:hover {
+	font-weight: bold;
+}
+
+/*FOOTER*/
+footer > div {
+	max-width: 65%;
+	margin: auto;
+}
+
+footer h5 {
+	font-size: 1.3em;
+	text-decoration: underline;
+	margin: 0px;
+	display: inline-block;
+}
+
+.contact, .references {
+	color: #FAFAFA;
+	text-decoration: none;
+	margin: 24px;
+	padding: 16px 8px;
+}
+
+.references {
+	float: right;
+}
+
+.contact {
+	float: left;
+}
+
+.references li{
+	font-size: 0.8em;
+}
+
+.contact li {
+	padding-right: 12px;
+	float: left;
+}
+
+.references ul, .contact ul {
+	padding: 0;
+}
+
+.note {
+	font-size: .7em;
+}
