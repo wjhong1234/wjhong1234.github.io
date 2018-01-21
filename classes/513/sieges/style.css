@@ -73,18 +73,23 @@ footer {
 }
 
 /*SHOWCASE*/
-/*.showcase {
+.showcase {
 	width: auto;
 	height: 128px;
+	text-align: center;
+}
+
+.showcase img {
+	max-width: inherit;
+	height: auto;
+	border-radius: 1px;
 }
 
 .showcase .button {
-	width: 128px;
-	padding: 52px;
-	background-color: #2F2F2F;
-	color: #FAFAFA;
+	max-width: 256px;
+	margin: 0px 16px;
 	display: inline-block;
-}*/
+}
 
 /*CAPTIONS*/
 .imgsource {
