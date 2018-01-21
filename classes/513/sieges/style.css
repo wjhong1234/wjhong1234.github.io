@@ -159,7 +159,7 @@ footer a:hover {
 
 .title {
 	display: inline-block;
-	font-size: 1.8em;
+	font-size: 1.8vw;
 	padding-top: 12px;
 	margin-left: 32px;
 }
@@ -167,7 +167,7 @@ footer a:hover {
 .nav {
 	margin-right: 32px;
 	float: right;
-	font-size: 1.2em;
+	font-size: 1.2vw;
 }
 
 .nav li {
