@@ -44,6 +44,7 @@ h4 {
 }
 
 header {
+	max-width: 100%;
 	overflow: hidden;
 	background-color: #111;
 	position: fixed;
@@ -99,6 +100,7 @@ footer {
 /*TABLE*/
 .siegetable {
 	border-collapse: collapse;
+	max-width: 960px;
 }
 
 .siegetable td, .siegetable th {
@@ -120,8 +122,21 @@ footer {
 	padding: 12px 48px;
 }
 
-.siegetable img {
+.siegetable .imagecell {
+	margin: 0px;
+	padding: 2px;
+	background-color: #111;
+}
+
+.siegetable tr td img {
 	/*limit the size, make it a square*/
+	width: 100px;
+	height: 100px;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	display: block;
+	box-sizing: border-box;
 }
 
 /*LINKS*/
