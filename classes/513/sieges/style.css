@@ -78,18 +78,27 @@ footer {
 	width: auto;
 	height: 128px;
 	text-align: center;
+	padding: 8px 2px 32px;
 }
 
 .showcase img {
-	max-width: inherit;
-	height: auto;
+	width: 256px;
+	height: 148px;
 	border-radius: 1px;
 }
 
 .showcase .button {
 	max-width: 256px;
+	max-height: 148px;
 	margin: 0px 16px;
 	display: inline-block;
+	filter: grayscale(100%);
+	transition: filter 0.5s;
+	font-size: 1.1em;
+}
+
+.showcase .button:hover {
+	filter: grayscale(0%);
 }
 
 /*CAPTIONS*/
@@ -124,8 +133,8 @@ footer {
 
 .siegetable .imagecell {
 	margin: 0px;
-	padding: 2px;
-	background-color: #111;
+	padding: 0px;
+	/*background-color: #111;*/
 }
 
 .siegetable tr td img {
