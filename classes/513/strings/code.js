@@ -128,6 +128,11 @@ function wordStats(text) {
         }
     }
 
+    // final check for loaded words
+    if (word != "") {
+        words.push(word);
+    }
+
     return words;
 }
 
