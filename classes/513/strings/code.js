@@ -37,22 +37,28 @@ function palindrome(word) {
     } return true;
 }
 
+// returns the frequencies of the words/
 function getFrequencies(frequency) {
     let pairs = [];
+
+    // fills pairs with pairs of words and their frequencies
     for (i=0; i<frequency.w.length; i++) {
         pairs.push({word: frequency.w[i], count: frequency.f[i]});
     }
 
+    // sort the pairs list greatest to smallest
     pairs.sort(function(a, b) {
-        return b.count - a.count;
+        return b.count - a.count || a.word.localeCompare(b.word);
     });
 
     frequency = [];
 
+    // creates the string from the pair and pushes to a new array
     for (let pair of pairs.slice(0, 10)) {
         frequency.push(pair.word + '(' + pair.count + ')')
     }
 
+    // return the array
     return frequency;
 }
 
@@ -92,7 +98,7 @@ function deepWordStats(words) {
 
     // gets the top 10 longest words
     longest.sort(function(a, b) {
-        return b.length - a.length;
+        return b.length - a.length || a.localeCompare(b);
     });
 
     // return everything
