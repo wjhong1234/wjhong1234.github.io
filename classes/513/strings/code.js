@@ -88,7 +88,7 @@ function deepWordStats(words) {
         }
 
         // checks if word is a palindrome and not already in list
-        if (palindrome(word) && !palindromes.includes(word)) {
+        if (word.length > 2 && palindrome(word) && !palindromes.includes(word)) {
             palindromes.push(word);
         }
 
