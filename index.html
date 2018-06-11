@@ -1,154 +1,175 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>William Hong</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/solid.css" integrity="sha384-HTDlLIcgXajNzMJv5hiW5s2fwegQng6Hi+fN6t5VAcwO/9qbg2YEANIyKBlqLsiT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css" integrity="sha384-KtmfosZaF4BaDBojD9RXBSrq5pNEO79xGiggBxf8tsX+w2dBRpVW5o0BPto2Rb2F" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css" integrity="sha384-8WwquHbb2jqa7gKWSoAwbJBV2Q+/rQRss9UXL5wlvXOZfSodONmVnifo/+5xJIWX" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </head>
+<body>
 
-<header class="header container-fluid">
-  <div class="nav-toggle-wrapper">
-    <button class="nav-toggle-btn">
-					      <span class="line"></span>
-      					<span class="line"></span>
-					      <span class="line"></span>
-				    </button>
-  </div>
-  <nav class="header__nav">
-    <ul class="nav">
-      <li class="header__nav__item"><a href="#about" data-ref="about">intro</a></li>
-      <li class="header__nav__item"><a href="#portfolio" data-ref="portfolio">projects</a></li>
-      <li class="header__nav__item"><a href="#contact" data-ref="contact">contact</a></li>
-    </ul>
-  </nav>
-  <ul class="header__social-btns">
-    <li><a class="fa fa-instagram" href="https://www.instagram.com/wilyum.jh/" target="_blank"></a></li>
-    <li><a class="fa fa-github" href="https://www.github.com/wjhong1234" target="_blank"></a></li>
-    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/william-hong-a7445313b/" target="_blank"></a>
-    </li>
-  </ul>
-</header>
+	<!-- Page Title -->
+	<div id="title" class="highlight">
+		<span></span>
+		<h1>WILLIAM HONG</h1>
+	</div>
+	<div id="social-group">
+		<a href="mailto:william.hong@ucalgary.ca" class="social-btn email-link">william.hong@ucalgary.ca</a>
+		<!-- <a href="" class="social-btn"><i class="fab fa-instagram"></i></a> -->
+		<a href="https://github.com/wjhong1234" class="social-btn"><i class="fab fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/william-hong-a7445313b/" class="social-btn"><i class="fab fa-linkedin"></i></a>
+	</div>
 
-<main>
+	<!-- Home Page -->
+	<div id="page-home" class="page">
 
-  <section id="about" class="main-section">
-    <div class="wrapper">
-      <p class="about__intro">
-         Hi, I'm William, an aspiring Android Developer with an interest in UX/UI design. <br> 
-         I'm a Fourth Year Computer Science student at the University of Calgary, with Java and Python as my primary languages. <br> 
-         I'm into PC gaming and chilling with my dudes. <br>
-      </p>
-      <a href="#portfolio" class="global-button rotated scroll"> see my work </a>
-    </div>
-  </section>
+		<!-- Introductory Content -->
+		<div id="intro">
+			<img src="images/profile.jpg">
+			<p>I'm William, an aspiring <span class="highlight"><span></span><b>web developer</b></span> newly graduated from the University of Calgary. <span class="highlight"><span></span><b>Passionate</b></span> about web design, I love working with people and I'm always happy to learn new things.</p>
+		</div>
+	</div>
 
-  <section id="portfolio" class="container main-section">
-    <div class="filters row js-dis">
-      <h4 class="filters__title"> <i class="fa fa-tags"></i> </h4>
-      <ul class="filters__list">
-        <li class="filters__label is-active"> all </li>
-        <!--<li class="filters__label" data-cat="android"> Android Applications </li>
-        <li class="filters__label" data-cat="personal"> Personal Projects </li>
-        <li class="filters__label" data-cat="hardware"> Hardware Programming </li>
-        <li class="filters__label" data-cat="other"> other </li> -->
-      </ul>
-    </div>
+	<!-- Resume Page -->
+	<div id="page-resume" class="page">
+		<a href="Resume_WilliamHong.pdf" download id="title-cap">pdf version</a>
+		
+		<div class="row">
 
-    <div class="portfolio__project-wrapper row">
+			<!-- Resume Section -->
+			<div class="col-lg-5 col-12">
+				<div class="resume-div">
+					<span class="highlight"><span></span><h3 class="resume-hd">Education</h3></span>
+					<h2 class="resume-ttl">University of Calgary</h2>
+					<span class="resume-ctn">Bachelor of Science in Computer Science</span>
+				</div>
 
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="android" style="background-image: url(images/index/icarus_button/tile.png);">
-        <a href="icarus.html">
-          <div class="portfolio__project__preview">
-            <img src="images/index/icarus_button/cookie.svg" alt="Icarus">
-          </div>
-          <div class="portfolio__project__description" style="background: none; background-image: url(images/index/icarus_button/clouds.png);">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name">Icarus</h3>
-              <p class="portfolio__project__category">A mobile game for Android about a cookie named Icarus.</p>
-            </div>
-          </div>
-        </a>
-      </div>
+				<div class="resume-div">
+					<span class="highlight"><span></span><h3 class="resume-hd">Technical Skills</h3></span>
+					<h2 class="resume-ttl">Languages</h2>
+					<span class="resume-ctn">Javascript, HTML/CSS, Java, Python, C/C++, Kotlin</span>
 
-      <div class="portfolio__project-wrapper row">
+					<h2 class="resume-ttl">Operating Systems</h2>
+					<span class="resume-ctn">Microsoft Windows, Mac OS X, Linux</span>
 
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="android" style="background-image: url(images/index/sasshat_button/hat2.png);">
-        <a href="sasshat.html">
-          <div class="portfolio__project__preview">
-            <img src="images/index/sasshat_button/pixels.png" width="100" alt="SassHat" style="visibility: hidden;">
-          </div>
-          <div class="portfolio__project__description" style="background: none; background-image: url(images/index/sasshat_button/bill.png); background-size: 100%;">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name" style="color: #FAFAFA;">SassHat</h3>
-              <p class="portfolio__project__category" style="color: #FAFAFA;">Prototype for an interactive, smart, wearable.</p>
-            </div>
-          </div>
-        </a>
-      </div>
+					<h2 class="resume-ttl">Tools &amp; Applications</h2>
+					<span class="resume-ctn">JQuery, Sass, Bootstrap 4, Socket.io, Vue.js &amp; more</span>
+				</div>
 
-      <div class="portfolio__project-wrapper row">
+				<div class="resume-div">
+					<span class="highlight"><span></span><h3 class="resume-hd">Contact Me!</h3></span>
+					<span style="display: block;"><a href="mailto:william.hong@ucalgary.ca" class="email-link">william.hong@ucalgary.ca</a></span>
+					<div>
+						<!-- <a href="" class="social-btn"><i class="fab fa-instagram"></i></a> -->
+						<a href="https://github.com/wjhong1234" class="social-btn"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/william-hong-a7445313b/" class="social-btn"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
 
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="android" style="background-image: url(images/index/horror_button/catground.png);">
-        <a href="trainingground.html">
-          <div class="portfolio__project__preview">
-            <img src="images/index/icarus_button/cookie.svg" alt="VR Horror Training" style="visibility: hidden;">
-          </div>
-          <div class="portfolio__project__description" style="background: none; background-image: url(images/index/horror_button/cloth.png);">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name" style="color: #FAFAFA;">VR Horror Training</h3>
-              <p class="portfolio__project__category" style="color: #FAFAFA;">Horror movie tropes will haunt you no more.</p>
-            </div>
-          </div>
-        </a>
-      </div>
+			<!-- Resume Graph! -->
+			<div class="col-lg-7 col-12">
+				<!-- canvas.js?? -->
+				<img src="images/graph.png" class="resume-graph">
+			</div>
+		</div>
+	</div>
 
-      <div class="portfolio__project-wrapper row">
+	<!-- Projects Page -->
+	<div id="page-works" class="page">
+		<span class="works-ctn">
+			<p>These are three of my<br>favourite projects!</p>
+		</span>
 
-      <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="android" style="background-image: url(images/index/hygge_button/fireback.png);">
-        <a href="hygge.html">
-          <div class="portfolio__project__preview">
-            <img src="images/index/icarus_button/cookie.svg" alt="Hygge Social" style="visibility: hidden;">
-          </div>
-          <div class="portfolio__project__description" style="background: none; background-image: url(images/index/hygge_button/woodback.png);">
-            <div class="info-wrapper">
-              <h3 class="portfolio__project__name" style="color: #FAFAFA;">Hygge Social</h3>
-              <p class="portfolio__project__category" style="color: #FAFAFA;">Nonintrusively encouraging conversation in a comfortable setting.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-    </div>
+		<div id="fstWork">
+			<!-- Icarus -->
+			<h1>icarus</h1>
+		</div>
+		<div id="sndWork">
+			<!-- UXtra -->
+			<h1>uxtra</h1>
+		</div>
+		<div id="trdWork">
+			<!-- Balls & Boxes -->
+			<h1>balls&boxes</h1>
+		</div>
+		
+	</div>
 
-  </section>
+	<!-- Project Page -->
+	<div id="page-project" class="page">
+		<!-- First Project -->
+		<div id="fstImgs" class="image-group mobile-group">
+			<img src="images/icarus/front.jpg">
+			<img src="images/icarus/back.jpg">
+		</div>
 
-</main>
-<!--
-<footer class="container">
-  <section id="contact" class="row main-section ">
-    <div class="col-xs-12 col-md-5 contact-form-wrapper">
-      <h2 class="heading"> drop me a line </h2>
-      <form class="contact-form">
-        <div class="contact-form-el">
-          <input type="text" id="name" class="input" required></input>
-          <label for="name"> your name </label>
-        </div>
-        <div class="contact-form-el">
-          <input type="email" id="email" class="input" required></input>
-          <label for="email"> your e-mail </label>
-        </div>
-        <div class="contact-form-el">
-          <textarea rows="7 " id="message" class="input" required></textarea>
-          <label for="message"> your message </label>
-        </div>
-        <div class="text-right">
-          <button type="submit" class="global-button"> send </button>
-        </div>
-      </form>
-    </div>
-  </section>
-</footer> -->
+		<!-- Second Project -->
+		<div id="sndImgs" class="image-group">
+			<img src="images/uxtra/front.png">
+			<img src="images/uxtra/back.png">
+		</div>
 
-<script type="text/javascript" src="js/index.js"></script>
+		<!-- Third Project -->
+		<div id="trdImgs" class="image-group">
+			<img src="images/bnb/front.png">
+			<img src="images/bnb/back.png">
+		</div>
+
+		<!-- First Project -->
+		<div id="fstDesc" class="project-desc">
+			<h2 class="project-hd">The Classic Game + Cookies</h2>
+			<p class="project-ctn">
+				Meet up with your cookie friends on the rainbow bridge, but don't let those spiders eat you! <br><br>
+				My take on the old 'racer game', this project was created with a <span class="highlight"><span></span><b>client</b></span> in mind, designing specifically for the things she liked (cookies, pastel colours). <br><br>
+				This is an <span class="highlight"><span></span><b>Android Studio</b></span> project, made from scratch.
+			</p>
+			<a href="https://www.youtube.com/watch?v=ynBKwLF5AWY" target="_blank" class="project-btn">Watch the video demo!</a>
+		</div>
+
+		<!-- Second Project -->
+		<div id="sndDesc" class="project-desc">
+			<h2 class="project-hd">Go the XTRA Mile</h2>
+			<p class="project-ctn">
+				Share your designs with your friends or colleagues, or if you're up for it, the world! Get real feedback from your target market without needing to jump through all the unnecessary hoops. <br><br>
+				Built with <span class="highlight"><span></span><b>Node.js</b></span>, <span class="highlight"><span></span><b>MongoDB</b></span>, <span class="highlight"><span></span><b>Bootstrap4</b></span>, and more, this <span class="highlight"><span></span><b>Heroku</b></span> hosted app was created by a team of four ambitious young people, myself included.
+			</p>
+			<a href="http://uxtra.herokuapp.com/" target="_blank" class="project-btn">Come take a look!</a>
+		</div>
+
+		<!-- Third Project -->
+		<div id="trdDesc" class="project-desc">
+			<h2 class="project-hd">Not Flappy Bird</h2>
+			<p class="project-ctn">
+				But I guess it's pretty similar. Jump over the boxes or you'll lose. Hit the ceiling or fall to the floor and you'll lose too. So don't do that. <br><br>
+				Made using <span class="highlight"><span></span><b>Javascript</b></span> and <span class="highlight"><span></span><b>HTML5 Canvas</b></span>, this game marked the start of my journey into web programming.
+			</p>
+			<a href="http://wjhong.ca/ballsnboxes/" target="_blank" class="project-btn">Play it right now!</a>
+		</div>
+	</div>
+
+	<!-- Bottom Aligned Navigation -->
+	<div id="nav-bar">
+		<span id="left-nav" class="nav-btn blip-left"><i class="fas fa-long-arrow-alt-left"></i> <span>resume</span></span>
+		<div id="flatbox">
+			<div class="resume-box"></div>
+			<div class="home-box"></div>
+			<div class="works-box"></div>
+			<div class="fst-box"></div>
+			<div class="snd-box"></div>
+			<div class="trd-box"></div>
+		</div>
+		<span id="right-nav" class="nav-btn blip-right"><span>work</span> <i class="fas fa-long-arrow-alt-right"></i></span>
+	</div>
+
+</body>
+</html>
